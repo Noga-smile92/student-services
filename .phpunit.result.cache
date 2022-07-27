@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":321:{a:2:{s:7:"defects";a:2:{s:41:"configurationTest::test_update_data_admin";i:3;s:41:"configurationTest::test_delete_data_admin";i:4;}s:5:"times";a:3:{s:41:"configurationTest::test_insert_data_admin";d:0.089;s:41:"configurationTest::test_update_data_admin";d:0.004;s:41:"configurationTest::test_delete_data_admin";d:0.028;}}}

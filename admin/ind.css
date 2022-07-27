@@ -1,0 +1,60 @@
+
+.main{
+    width: 40%;
+    box-shadow: 1px 1px 10px rgb(196, 188, 188);
+    margin-top: 45px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+h2{
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    width: 100%;
+    background-color: rgb(127, 214, 255);
+  
+}
+
+    input{
+        margin-bottom: 10px;
+        width: 60%;
+        padding: 10px;
+        font-family: 'Cairo', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 30px;
+        border: 2px solid #4d4646;
+        text-align: center;
+        transition: .3s;
+    }
+button{
+    border:none;
+    padding: 10px;
+    width: 30%;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1AC15C;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+label{
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1F87CF;
+    font-family: 'Cairo', sans-serif;
+    color:white;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color:tomato;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+}
