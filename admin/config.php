@@ -1,38 +1,37 @@
 
+
+
 <?php
 
-class Nagla
+class gg
 {
-       public $user;
+       public $username;
         public $host;
         public $pass;
+        public $db;
         public $conn;
-        
-            public function __construct()
+    
+        public function kk()
         {
-            $this->gg();
-            $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db);
-        }
-    public function gg()
-    {
-     return [$this->user = "root",
+     return [$this->username = "root",
      $this->host = "localhost",
      $this->pass = "",
-     $this->db = "services"];  
-    }
-        public function connect()
-        {
-           
-        if($this->conn->connect_error)
-        {
-            die("<h1> Database connection failed! <h1>");
-        }else
-        {
-           
-            return $this->conn=$conn;
-         
+     $this->db = "services"];
             
         }
     }
-}
-?>
+    class Nagla extends gg
+    {
+        public function __construct()
+    {
+        parent::kk();
+        $this->conn = new mysqli($this->host, $this->username, $this->pass, $this->db) or die('could not connect to mysql');
+        
+    }
+    
+    }
+    
+      
+    
+
+?>      
