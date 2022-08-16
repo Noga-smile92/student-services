@@ -9,7 +9,7 @@ if(isset($_POST['upload']))
     $_SESSION["image_location"] = $_FILES['image']['tmp_name'];
     $_SESSION["image_name"] = $_FILES['image']['name'];
     $_SESSION["image_up"] = "images/". $_SESSION["image_name"];
-    $insert= new service();
+    $insert= new uploo(new SQlconnection());
     $up=$insert->upload($name,$price, $_SESSION["image_up"]);
     $load=$insert->condition($_SESSION["image_location"],$_SESSION["image_up"]);
     if($load) 
