@@ -1,4 +1,4 @@
-<?php
+ <?php
 include_once('C:\wamp64\www\Student Services\admin\config.php');
 interface Service 
 {
@@ -19,28 +19,33 @@ return $this->conn;
 }
 class del 
 {
-  private $con;
-  public function __construct(Service $con)
+  private $dels;
+  public function __construct(Service $dels)
 {
-  $this->con=$con;
+  $this->dels=$dels;
 
+ }
+ public function connect()
+ {
+return $this->dels->connect();
  }
  
     public function delete($id)
     {
       return $this->connection->connect();
-     $id =$this->conn->query("DELETE FROM products WHERE id= $id");
-          return $id;
+     $id =("DELETE FROM products WHERE id= $id");
+          return $this->conn->query($id);
      
     }
 }
 class uploo 
   {
     public $uploos;
+  
   public function __construct(Service $uploos)
 {
   $this->uploos=$uploos;
-
+  
 
  }
  public function connect()
@@ -50,11 +55,9 @@ return $this->uploos->connect();
         
   public function upload($name,$price,$image_up)
   {
-    $insert=("INSERT INTO  products (name, price, image) VALUES ('$name', '$price', '$image_up')");
-    
-    $result=$this->conn->query($insert);
-     return $result;
-   
+    $insert=("INSERT INTO  products (name, price, image) VALUES ('$name', '$price', '$image_up')"); 
+  $result= $this->conn->query($insert);
+   return $result;
   
   }
   
@@ -67,6 +70,11 @@ class updaten
       $this->up=$up;
     
      }
+     
+ public function connect()
+ {
+return $this->$up->connect();
+ }
   public function updatecondition($id,$name,$price,$image_up) 
     {
      
@@ -102,6 +110,24 @@ return $rr;
 
 
 ?>
+           
+  
+
+
+
+  
+   
+
+ 
+
+
+
+
+    
+
+  
+
+
 
 
 
