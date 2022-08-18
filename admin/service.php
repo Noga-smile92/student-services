@@ -1,5 +1,5 @@
 <?php
-include_once('config.php');
+include_once('C:\wamp64\www\Student Services\admin\config.php');
 interface Service 
 {
    
